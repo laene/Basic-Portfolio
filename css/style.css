@@ -1,0 +1,15 @@
+header {
+    position: relative;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.heading-name {
+    background-color: aquamarine;
+    padding: 20px;
+    width: auto;
+}
+
+.content {
+    margin: 0 auto;
+}

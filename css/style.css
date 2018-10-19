@@ -1,15 +1,102 @@
+/* need to figure out why margin goes to 0 on small screens */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+.page-structure {
+    background-image: url("images/full-bloom.png");
+    background-size: contain;
+    height: 100%;
+    color:#777777;
+}
+
 header {
-    position: relative;
-    background-color: whitesmoke;
-    padding: 20px;
+
+    background-color: #ffffff;
+    border-bottom: 3px solid #cccccc;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.heading-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    color: #777777 !important;
 }
 
 .heading-name {
-    background-color: aquamarine;
-    padding: 20px;
-    width: auto;
+    background-color: teal;
+    color: #ffffff;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
 }
 
+#name {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #777777;
+}
+
+#about,#portfolio,#contact {
+    margin:20px;
+}
+
+
+
 .content {
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    height: 1700;
+    background-color: #ffffff;
+}
+
+#bio {
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subheader {
+    color: teal;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#selfie {
+    width: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+    border-top: 8px solid teal;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

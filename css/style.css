@@ -1,5 +1,3 @@
-/* need to figure out why margin goes to 0 on small screens */
-
 html {
     height: 100%;
 }
@@ -7,12 +5,13 @@ html {
 body {
     height: 100%;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .page-structure {
     background-image: url("images/full-bloom.png");
-    background-size: contain;
     height: 100%;
     color:#777777;
+    overflow: auto;
 }
 
 header {
@@ -54,6 +53,7 @@ h2 {
 
 .nav-link {
     color: #777777;
+    text-decoration: none;
 }
 
 #about,#portfolio,#contact {
@@ -70,9 +70,35 @@ h2 {
     max-width: 960px;
     height: 1700;
     background-color: #ffffff;
+   
+}
+
+.wrapper {
+    border-top: 2px solid #cccccc;
+
+}
+
+#portfolio-wrapper {
+    max-width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 #bio {
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-page {
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#portfolio-page {
     margin: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -83,20 +109,60 @@ h2 {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    line-height: 150%;
 }
 
 #selfie {
     width: 200px;
     float: left;
-    margin-right: 5px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.contact-form {
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100pt;
+}
+
+.portfolio-image {
+    position: relative;
+    margin: 10px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+.portfolio-label {
+    background-color: teal;
+    position: absolute;
+    bottom: 15pt;
+    width: 250px;
+    color: white;
+    text-align: center;
 }
 
 .footer {
     background-color: #333;
-    padding: 20px;
+    padding: 10px;
     border-top: 8px solid teal;
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+}
+
+#copywrite {
+    color: #ffffff;
 }

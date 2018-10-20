@@ -19,21 +19,36 @@
                 </div>
                 <!-- needs to be made into anchor tags -->
                 <div class="nav-bar">
-                    <div id="about">About</div>
-                    <div id="portfolio">Portfolio</div>
-                    <div id="contact">Contact</div>
+                    <div id="about">
+                        <a class="nav-link" href="index.html">About</a>
+                    </div>
+                    <div id="portfolio">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div id="contact">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <div class="content">
-            <h2 class="subheader">Contact Me</h2>
-            <!-- need to add actual words!! -->
-           
+            <section id="contact-page">
+                <h2 class="subheader">Contact Me</h2>
+                <section class="wrapper">
+                    <div class="contact-form">
+                        <label class="label">Name</label><br>
+                        <input id="contact-name" type="text" placeholder="Your Name"> <br>
+                        <label class="label">Email</label> <br>
+                        <input id="contact-email" type="email" placeholder="email@address.com"> <br>
+                        <label class="lable">Message</label> <br>
+                        <textarea id="contact-message" placeholder="Your Message Here"></textarea> <br>
+                    </div>
+                </section>
+            </section>
         </div>
         <footer class="footer">
-
-
+            <p id="copywrite"> &copy 2018 Elena Henry</p>
         </footer>
     </div>
 </body>

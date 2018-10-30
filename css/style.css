@@ -60,7 +60,7 @@ h2 {
 }
 
 a:hover {
-    color: teal;
+    color: goldenrod;
 }
 
 #about,#portfolio,#contact {
@@ -168,6 +168,10 @@ img {
     width: 250px;
     color: white;
     text-align: center;
+}
+
+a {
+    color: white;
 }
 
 .footer {
